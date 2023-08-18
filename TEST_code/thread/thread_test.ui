@@ -1,0 +1,25 @@
+<UI version="4.0" >
+ <class>thread_testClass</class>
+ <widget class="QWidget" name="thread_testClass" >
+  <property name="objectName" >
+   <string notr="true">thread_testClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>thread_test</string>
+  </property>$centralwidget$
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="thread_test.qrc"/>
+ </resources>
+ <connections/>
+</UI>

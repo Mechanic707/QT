@@ -16,6 +16,7 @@ import numpy as np
 import cv2
 import time
 import cvlib
+import qtlib
 
 class MyWidget(QWidget, Ui_Form): 
     def __init__(self, parent =None):
@@ -26,7 +27,8 @@ class MyWidget(QWidget, Ui_Form):
 
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.update_frame)
-        self.timer.start(5)
+        self.timer.start(50)
+
 
         self.imageList = []
 

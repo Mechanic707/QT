@@ -22,7 +22,7 @@ class Ui_Form(object):
         self.frame = QtWidgets.QLabel(Form)
         self.frame.setMinimumSize(QtCore.QSize(2730, 260))
         self.frame.setMaximumSize(QtCore.QSize(2730, 260))
-        self.frame.setAlignment(QtCore.Qt.AlignCenter)
+        self.frame.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.frame.setObjectName("frame")
         self.horizontalLayout_2.addWidget(self.frame)
 

@@ -1,3 +1,6 @@
+### 原始界面显示
+
+```python
 # -*- coding: utf-8 -*-
 
 import sys
@@ -12,36 +15,15 @@ from PyQt5.QtGui import QDesktopServices
 from PyQt5.QtCore import QUrl, QStandardPaths
 from PyQt5 import QtGui
 
-import numpy as np
-import cv2
-import time
-import cvlib
-import qtlib
-
 class MyWidget(QWidget, Ui_Form): 
     def __init__(self, parent =None):
         super(MyWidget, self).__init__(parent)
         self.setupUi(self)
-
-        self.camera = cv2.VideoCapture(0)
-
-        self.timer = QTimer(self)
-        self.timer.timeout.connect(self.update_frame)
-        self.timer.start(100)
-
-
-        self.imageList = []
-
-    def update_frame(self):
-        ret, frame = self.camera.read()
-        if ret:
-            cvlib.hor_dynamic_show(self.imageList, 7, frame, self.frame)
- 
-    
-    
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     myWin = MyWidget()
     myWin.show()
     sys.exit(app.exec_())    
+```
+

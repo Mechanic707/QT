@@ -19,7 +19,6 @@ class MyWidget(QWidget, Ui_Form):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    import pyrealsense2 as rs
     myWin = MyWidget()
     myWin.show()
     sys.exit(app.exec_())    
